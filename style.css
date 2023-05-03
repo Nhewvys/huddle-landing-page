@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* ---------------mobile-first-------- */
+
+body{
+    background-color: var(--Violet);
+    background: var(--Violet) url(images/bg-mobile.svg) no-repeat;
+    background-size: 100vw;
+ 
+}
+header{
+    margin: 2rem;
+    width: calc(100%-2rem);
+}
+header > img{
+    width: 40%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mockups-img{
+    width: 85%;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    color: #f8f8f8;
+    font-size: 30px;
+    margin: 3rem 0 1rem;
+    text-align: center; 
+}
+.text{
+    color: #f8f8f8e3;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin: 0 3rem 1.6rem;
+}
+.btn{
+    font-size: 1rem;
+    padding: 18px 100px;
+    border-radius: 30px;
+    color: var(--Violet);
+    border: none;
+    box-shadow: 3px 3px 6px #0000005d;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.icons>a>i{
+    font-size: 20px;
+    border: 2px solid #f8f8f8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 4rem .5rem 1rem;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+.icons a > i:hover{
+    transform: scale(1.1);
+    border-color: var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+    box-shadow: 0px 0px 10px var(--Soft-Magenta);
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 1200px){
+    body{  
+        background-size: cover;
+        background-position: center;
+    }
+    header>img{
+        width: 20%;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .content{
+        width: 40%;
+        justify-content: left;
+        align-items: start; 
+    }
+    .title{
+        text-align: left;
+    }
+    .text{
+        text-align: justify;
+        margin: 0rem 0 1.6rem;
+    }
+    .icons{
+        position: absolute;
+        bottom: .5rem;
+        right: .5rem;     
+    }
+    .btn:hover{
+        background-color: var(--Soft-Magenta);
+        transform: scale(105%);
+    }
+}
