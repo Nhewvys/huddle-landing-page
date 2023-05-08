@@ -47,10 +47,9 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge I was able to understand more about flexbox, image positioning and semantic tags, also using the icon library and working with them, which was quite a challenge. the semantic tags I used were: - main
+In this challenge I was able to understand more about flexbox, image positioning and semantic tags, also using the icon library and working with them, which was quite a challenge. the semantic tags I used were:
 
 
-To see how you can add code snippets, see below:
 
 ```html
 <main></main>
